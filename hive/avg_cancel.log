@@ -1,0 +1,50 @@
+
+Logging initialized using configuration in file:/etc/ecm/hive-conf-2.3.3-1.0.2/hive-log4j2.properties Async: true
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = student_20211027220803_f2674f1f-2f6e-4c8a-9bfd-1eaef2394755
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 9
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1635328716833_0009, Tracking URL = http://emr-header-1.cluster-46968:20888/proxy/application_1635328716833_0009/
+Kill Command = /usr/lib/hadoop-current/bin/hadoop job  -kill job_1635328716833_0009
+Hadoop job information for Stage-1: number of mappers: 9; number of reducers: 9
+2021-10-27 22:08:13,308 Stage-1 map = 0%,  reduce = 0%
+2021-10-27 22:08:18,530 Stage-1 map = 11%,  reduce = 0%, Cumulative CPU 2.11 sec
+2021-10-27 22:08:20,600 Stage-1 map = 56%,  reduce = 0%, Cumulative CPU 22.54 sec
+2021-10-27 22:08:21,639 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 43.51 sec
+2021-10-27 22:08:23,713 Stage-1 map = 100%,  reduce = 44%, Cumulative CPU 51.06 sec
+2021-10-27 22:08:24,746 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 60.5 sec
+MapReduce Total cumulative CPU time: 1 minutes 0 seconds 500 msec
+Ended Job = job_1635328716833_0009
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 9  Reduce: 9   Cumulative CPU: 60.5 sec   HDFS Read: 2159611250 HDFS Write: 1573 SUCCESS
+Total MapReduce CPU Time Spent: 1 minutes 0 seconds 500 msec
+OK
+0.014858983613808299	1989
+0.02708531953800228	1998
+0.021413493202735792	2007
+0.00965684906938743	1990
+0.02753583534740906	1999
+0.008552357971975278	1991
+0.03275415158316663	2000
+0.010247019725202956	1992
+0.038225371001660596	2001
+0.01200398472521999	1993
+0.012186873348823886	2002
+0.012881625241175802	1994
+0.015921015223178518	2003
+0.017387355368637208	1995
+0.01789496663500286	2004
+0.01602248547019405	1987
+0.024429142132119275	1996
+0.01904328285869549	2005
+0.009472565003060863	1988
+0.018017318370675262	1997
+0.017099181738863867	2006
+Time taken: 22.285 seconds, Fetched: 21 row(s)
