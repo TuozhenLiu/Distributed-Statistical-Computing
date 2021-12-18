@@ -1,0 +1,27 @@
++-----+------+--------------+-------------+-----------+-------------+-----------+
+|Usage| Limit|MortgageStatus|HistoryStatus|CountStatus|OverdueStatus|Gender_male|
++-----+------+--------------+-------------+-----------+-------------+-----------+
+| 1.01|1000.0|             0|            0|          1|            1|          1|
+|  1.0|1000.0|             0|            1|          1|            1|          1|
+| 1.01|1000.0|             0|            1|          1|            1|          1|
++-----+------+--------------+-------------+-----------+-------------+-----------+
+only showing top 3 rows
+
+None
++-------+------------------+
+|summary|     OverdueStatus|
++-------+------------------+
+|  count|              8371|
+|   mean|0.6155775892963804|
+| stddev|0.4864875059766857|
+|    min|                 0|
+|    max|                 1|
++-------+------------------+
+
+None
+DataFrame[label: int, features: vector]
+LogisticRegression | Test Accuracy = 0.703052
+DecisionTreeClassifier | Test Accuracy = 0.721244
+RandomForestClassifier | Test Accuracy = 0.711854
+GBTClassifier | Test Accuracy = 0.712441
+LinearSVC | Test Accuracy = 0.720657
