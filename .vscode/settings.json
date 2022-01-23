@@ -1,3 +1,6 @@
 {
-    "jupyter.jupyterServerType": "remote"
+    "jupyter.jupyterServerType": "remote",
+    "files.watcherExclude": {
+        "**/target": true
+    }
 }

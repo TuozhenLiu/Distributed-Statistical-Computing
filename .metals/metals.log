@@ -1,0 +1,100 @@
+2022.01.19 13:27:25 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/.metals/lsp.trace.json or /Users/tuozhen/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.01.19 13:27:26 INFO  logging to file /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/.metals/metals.log
+2022.01.19 13:27:26 INFO  Started: Metals version 0.11.1 in workspace '/Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing' for client Visual Studio Code 1.63.2.
+2022.01.19 13:27:26 INFO  Parse release: 1.8.0_291
+2022.01.19 13:27:26 WARN  Can't instantiate JavaInteractiveSemanticdb (version: Some(JdkVersion(1,8)), jdkHome: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home, javac exists: false)
+2022.01.19 13:27:27 INFO  time: initialize in 0.71s
+2022.01.19 13:27:27 WARN  Build server is not auto-connectable.
+2022.01.19 13:27:27 WARN  no build tool detected in workspace '/Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.01.19 13:35:44 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/Train0_features_assemble.scala
+2022.01.19 13:35:49 INFO  no build target found for /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/Train0_features_assemble.scala. Using presentation compiler with project's scala-library version: 3.1.0
+2022.01.19 13:35:52 INFO  time: code lens generation in 7.25s
+2022.01.19 13:50:23 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE3_grid_part_3.scala
+2022.01.19 13:50:27 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE1_grid_part_1.scala
+2022.01.19 13:50:34 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE3_grid_part_3.scala
+2022.01.19 13:50:35 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE5_mean_encoding.scala
+2022.01.19 13:50:38 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/Train1_lgbm.scala
+Exception in thread "pool-3-thread-1" java.lang.Error: dotty.tools.dotc.core.TypeError: Toplevel definition temp_df_= is defined in
+  /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/Train0_features_assemble.scala
+and also in
+  /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE5_mean_encoding.scala
+One of these files should be removed from the classpath.
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dotty.tools.dotc.core.TypeError: Toplevel definition temp_df_= is defined in
+  /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/Train0_features_assemble.scala
+and also in
+  /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE5_mean_encoding.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2439)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$1(SymDenotations.scala:2403)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2459)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2012)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2063)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:683)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:807)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:700)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:870)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:666)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:650)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1011)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:916)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:937)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:916)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1011)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:133)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:188)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:83)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:82)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:71)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:59)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.definition$$anonfun$1(ScalaPresentationCompiler.scala:209)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:139)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.01.19 14:43:52 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE3_grid_part_3.scala
+2022.01.19 14:43:52 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE1_grid_part_1.scala
+2022.01.19 14:43:54 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE3_grid_part_3.scala
+2022.01.19 14:43:54 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE1_grid_part_1.scala
+2022.01.19 14:43:56 INFO  shutting down Metals
+2022.01.22 19:08:36 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/.metals/lsp.trace.json or /Users/tuozhen/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.01.22 19:08:37 INFO  logging to file /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/.metals/metals.log
+2022.01.22 19:08:37 INFO  Started: Metals version 0.11.1 in workspace '/Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing' for client Visual Studio Code 1.63.2.
+2022.01.22 19:08:37 INFO  Parse release: 1.8.0_291
+2022.01.22 19:08:37 WARN  Can't instantiate JavaInteractiveSemanticdb (version: Some(JdkVersion(1,8)), jdkHome: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home, javac exists: false)
+2022.01.22 19:08:38 INFO  time: initialize in 1.13s
+2022.01.22 19:08:39 WARN  Build server is not auto-connectable.
+2022.01.22 19:08:39 WARN  no build tool detected in workspace '/Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.01.22 19:08:39 WARN  no build target for: /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE1_grid_part_1.scala
+2022.01.22 19:08:45 INFO  no build target found for /Users/tuozhen/Desktop/CUFE/Distributed-Statistical-Computing/Final/script/FE1_grid_part_1.scala. Using presentation compiler with project's scala-library version: 3.1.0
+2022.01.22 19:08:48 INFO  time: code lens generation in 7.72s
+2022.01.22 19:08:49 INFO  shutting down Metals
